@@ -18,6 +18,7 @@ function getPosts() {
 function createPost(post, callback) {
     setTimeout(() => {
         posts.push(post);
+        console.log('Resolving with callbacks');
         callback();
     },2000)
 }
