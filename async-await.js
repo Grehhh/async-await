@@ -1,4 +1,4 @@
-import{ posts, newPost, getPosts, createPost } from './promises.js';
+import{ newPost, getPosts, createPost } from './promises.js';
 
 async function init() {
     console.log('Resolving with async-await');

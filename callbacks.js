@@ -1,19 +1,4 @@
-const posts = [
-    {title:'Post one', body:'this is post one'},
-    {title:'Post two', body:'this is post two'}
-];
-
-const newPost = {title:'Post three', body:'this is post three'}
-
-function getPosts() {
-    setTimeout(() => {
-        let output = '';
-        posts.forEach((post,index) => {
-            output += `<li>${post.title}</li>`;
-        });
-        document.body.innerHTML = output;
-    },1000)
-}
+import { posts, newPost, getPosts } from './promises.js'
 
 function createPost(post, callback) {
     setTimeout(() => {
@@ -24,6 +9,5 @@ function createPost(post, callback) {
 }
 
 createPost(newPost,getPosts);
-
 //setTimeout() para simular comunicacion con servidor
 
