@@ -1,5 +1,3 @@
-let header = '';
-
 const posts = [
     {title:'Post one', body:'this is post one'},
     {title:'Post two', body:'this is post two'}
@@ -31,9 +29,7 @@ function createPost(post) {
     }); 
 }
 
-
-
-export { header, posts, newPost, getPosts, createPost };
+export { posts, newPost, getPosts, createPost };
 
 
 
