@@ -1,9 +1,5 @@
 import { newPost, getPosts, createPost } from './promises.js'; 
 
-// createPost(newPost)
-// .then(getPosts)
-// .catch(err => console.log(err));
-
 //PROMISE.ALL
 const promise1 = Promise.resolve('hello world');
 const promise2 = 10;
